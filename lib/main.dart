@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:training_app/pages/counter/view/counter_page.dart';
 
-import 'pages/counter/controller/counter_controller.dart';
+import 'pages/api_list/api_list_page.dart';
+import 'pages/counter/view/counter_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -44,7 +44,9 @@ class _MyHomePageState extends State<MyHomePage> {
         children: <Widget>[
           ListTile(
             title: const Text('List from API'),
-            onTap: () {},
+            onTap: () {
+              Get.to(() => const ApiListPage());
+            },
           ),
           ListTile(
             title: const Text('Counter app'),

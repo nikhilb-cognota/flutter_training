@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'core/theme/app_theme.dart';
 import 'pages/api_list/views/api_list_page.dart';
 import 'pages/counter/view/counter_page.dart';
 
@@ -15,9 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: AppTheme.mainTheme,
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }

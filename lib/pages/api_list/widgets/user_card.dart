@@ -15,12 +15,6 @@ class UserCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      elevation: 8.0,
-      shadowColor: Colors.black26,
-      clipBehavior: Clip.antiAlias,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(16.0),
-      ),
       child: InkWell(
         onTap: onPressed,
         child: Padding(

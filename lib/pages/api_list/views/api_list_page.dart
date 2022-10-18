@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'controllers/users_controller.dart';
+import '../controllers/users_controller.dart';
+import '../widgets/user_card.dart';
 
 class ApiListPage extends StatefulWidget {
   const ApiListPage({Key? key}) : super(key: key);
@@ -23,23 +24,19 @@ class _ApiListPageState extends State<ApiListPage> {
   }
 
   Widget seperatorBuilder(BuildContext context, int i) {
-    // return const SizedBox(height: 8.0);
-    return const Divider(
-      thickness: 5,
-      color: Colors.red,
-    );
+    return const SizedBox(height: 8.0);
+    // return const Divider(
+    //   thickness: 5,
+    //   color: Colors.red,
+    // );
   }
 
   Widget userItemBuilder(BuildContext context, int index) {
     final user = controller.users[index];
 
-    return ListTile(
-      title: Text(user.name),
-      // shape: RoundedRectangleBorder(
-      //   borderRadius: BorderRadius.circular(8.0),
-      //   side: const BorderSide(color: Colors.grey),
-      // ),
-      onTap: () {},
+    return UserCard(
+      user: user,
+      onPressed: () {},
     );
   }
 

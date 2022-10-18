@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'pages/api_list/api_list_page.dart';
+import 'pages/api_list/views/api_list_page.dart';
 import 'pages/counter/view/counter_page.dart';
 
 void main() {

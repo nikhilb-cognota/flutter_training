@@ -53,12 +53,48 @@ Implement login using Raphacure login API and GetxController
 
 
 # Session 4 [20/10/2022]
-1. Dart programming
+Dart programming
     - Data types and collection types
+    - variable initializers and modifiers
     - Data stuctures
-    - Async programming
+    - Async programming using async/await
+    - Async programming using Future/Completer
 
-2. Debugging
+## Task
+Create two pages:
+1. List of posts (First page)
+Fetch list of posts from API provided below, and display as a list on screen.
+Show a button in appbar to navigate to seconf page.
+
+2. Add new post (Second page)
+Show a form for user to create new post.
+Use two text fields to enter post title and body.
+New created post should show on first page.
+
+Notes:
+use http package for API calls.
+use get package for state management.
+create custom widgets to show Post data in list
+test the APIs in postman
+
+APIs:
+1. Get all Posts
+GET = https://jsonplaceholder.typicode.com/posts
+
+1. Get one Post
+GET = https://jsonplaceholder.typicode.com/posts/{post_id}
+
+2. Create Post
+POST = https://jsonplaceholder.typicode.com/posts
+payload = {
+  id: 101,
+  title: 'foo',
+  body: 'bar',
+  userId: 1
+}
+
+# Session 5
+1. Debugging
     - Exception handling
     - Debugging with breakpoints
     - Debugging UI using Dart DevTools
